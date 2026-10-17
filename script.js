@@ -1,10 +1,11 @@
 // Troque pelo número real, com código do país e DDD, só dígitos (ex.: 5519999999999)
-var WHATS = "+55 19 98980-6352";
+let WHATS = "+55 19 98980-6352";
 document.getElementById("ano").textContent = new Date().getFullYear();
 document.getElementById("f").addEventListener("submit", function (e) {
   e.preventDefault();
-  var nome = document.getElementById("nome").value.trim();
-  var err = document.getElementById("err");
+  let nome = document.getElementById("nome").value.trim();
+  let err = document.getElementById("err");
+  let numero = WHATS.replace(/\D/g, "");
   if (!nome) {
     err.textContent = "Informe seu nome para continuar.";
     return;
@@ -20,7 +21,7 @@ document.getElementById("f").addEventListener("submit", function (e) {
       ? "\n" + document.getElementById("msg").value.trim()
       : "");
   window.open(
-    "https://wa.me/" + WHATS + "?text=" + encodeURIComponent(txt),
+    "https://wa.me/" + numero + "?text=" + encodeURIComponent(txt),
     "_blank",
     "noopener",
   );
