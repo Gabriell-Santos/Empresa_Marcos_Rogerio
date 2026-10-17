@@ -1,5 +1,5 @@
 // Troque pelo número real, com código do país e DDD, só dígitos (ex.: 5519999999999)
-var WHATS = "5511963443421";
+var WHATS = "+55 19 98980-6352";
 document.getElementById("ano").textContent = new Date().getFullYear();
 document.getElementById("f").addEventListener("submit", function (e) {
   e.preventDefault();
