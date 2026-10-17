@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>SME Instalações Elétricas e Manutenção</title>
+    <meta
+      name="description"
+      content="Instalações elétricas, reformas, manutenção e contratos fixos ou temporários, com mão de obra especializada e conformidade com as NRs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <a class="logo" href="#topo" aria-label="SME, início"><i></i>SME</a>
+        <nav aria-label="Principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#contratos">Contratos</a>
+          <a href="#contato" class="btn">Pedir orçamento</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="topo">
+      <section class="hero" style="padding: 0">
+        <div class="wrap">
+          <h1>Instalação elétrica feita por quem entende</h1>
+          <p>
+            A SME cuida da instalação, da reforma e da manutenção elétrica da
+            sua obra, empresa ou condomínio, com mão de obra especializada e
+            dentro das normas.
+          </p>
+          <div class="acts">
+            <a class="btn" href="#contato">Pedir orçamento</a>
+            <a class="btn ghost" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos">
+        <div class="wrap">
+          <h2>O que a SME faz</h2>
+          <p class="lead">
+            Do cabo ao quadro de entrada, tudo executado por profissionais
+            qualificados.
+          </p>
+          <ul class="services">
+            <li>
+              <h3>Instalações novas</h3>
+              <p>
+                Redes elétricas completas para obras novas, com projeto e
+                execução seguindo as normas vigentes.
+              </p>
+            </li>
+            <li>
+              <h3>Reformas e adequações</h3>
+              <p>
+                Adequação de redes e infraestrutura existentes para atender
+                novas cargas e exigências de segurança.
+              </p>
+            </li>
+            <li>
+              <h3>Mudança de padrão e caixa de entrada</h3>
+              <p>
+                Troca e adequação do padrão de entrada de energia e da caixa de
+                medição.
+              </p>
+            </li>
+            <li>
+              <h3>Cabeamento</h3>
+              <p>
+                Lançamento e organização de cabos de energia e dados, com
+                acabamento limpo e identificado.
+              </p>
+            </li>
+            <li>
+              <h3>Eletrocalhas e eletrodutos</h3>
+              <p>
+                Instalação de eletrocalhas, eletrodutos e conexões em geral para
+                proteger e organizar a fiação.
+              </p>
+            </li>
+            <li>
+              <h3>Manutenção em geral</h3>
+              <p>
+                Correção de falhas, revisão de instalações e manutenção
+                preventiva para evitar paradas.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contratos" class="alt">
+        <div class="wrap split">
+          <div>
+            <h3>Contratos fixos e temporários</h3>
+            <p>
+              Precisa de equipe elétrica todo mês ou só durante uma obra? A SME
+              atende os dois formatos, com mão de obra especializada e prazo
+              combinado.
+            </p>
+            <span class="tag">Contrato fixo</span
+            ><span class="tag">Contrato temporário</span
+            ><span class="tag">Por obra</span>
+          </div>
+          <div>
+            <h3>Conformidade com as NRs</h3>
+            <p>
+              Os serviços são executados em conformidade com as Normas
+              Regulamentadoras, para que o trabalho seja seguro para a equipe e
+              para o seu patrimônio.
+            </p>
+            <p>
+              Pergunte sobre a documentação exigida para o seu local de
+              trabalho.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contact">
+        <div class="wrap cgrid">
+          <div class="info">
+            <h2>Peça seu orçamento</h2>
+            <p class="lead">
+              Conte o que você precisa. O atendimento é feito diretamente pelo
+              responsável.
+            </p>
+            <div class="who">
+              <strong>Marcos Rogério</strong
+              ><span>Responsável pelo atendimento</span>
+            </div>
+            <p>
+              <strong>WhatsApp:</strong>
+              <span id="telTxt">(00) 00000-0000</span>
+            </p>
+            <p><strong>E-mail:</strong> contato@seudominio.com.br</p>
+          </div>
+          <form id="f" novalidate>
+            <label
+              >Seu nome<input
+                id="nome"
+                name="nome"
+                autocomplete="name"
+                required
+            /></label>
+            <label
+              >Serviço
+              <select id="serv">
+                <option>Instalação nova</option>
+                <option>Reforma ou adequação</option>
+                <option>Mudança de padrão / caixa de entrada</option>
+                <option>Cabeamento, eletrocalha ou eletroduto</option>
+                <option>Manutenção</option>
+                <option>Contrato fixo ou temporário</option>
+              </select>
+            </label>
+            <label
+              >Mensagem<textarea
+                id="msg"
+                placeholder="Descreva o local e o que precisa ser feito"
+              ></textarea>
+            </label>
+            <div class="err" id="err" role="alert"></div>
+            <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span
+          >© <span id="ano"></span> SME Serviços de Instalação Elétricas e
+          Manutenção</span
+        >
+        <span>CNPJ 19.883.276/0001-48</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
